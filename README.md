@@ -90,7 +90,7 @@
 ### התקנה:
 1. **שכפול מאגר הקוד:**
    ```bash
-   git clone https://github.com/yourusername/TaskManagementSystem.git
+   git clone [https://github.com/yourusername/TaskManagementSystem.git](https://github.com/hilaln2210/TaskMangementSystem.git)
    cd TaskManagementSystem
    ```
 
