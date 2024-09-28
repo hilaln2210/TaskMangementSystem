@@ -85,29 +85,7 @@
 - **מיון וחיפוש** - יכולת למיין את המשימות לפי תאריכים, סדר עדיפויות או סטטוס, ולבצע חיפוש פשוט.
 - **תזכורות** - הצגת תזכורות לגבי משימות שמתקרב מועד הביצוע שלהן.
 
-## התקנה והרצה
 
-### התקנה:
-1. **שכפול מאגר הקוד:**
-   ```bash
-   git clone [https://github.com/yourusername/TaskManagementSystem.git](https://github.com/hilaln2210/TaskMangementSystem.git)
-   cd TaskManagementSystem
-   ```
-
-2. **בניית הפרויקט באמצעות Maven:**
-   ```bash
-   mvn clean package
-   ```
-
-3. **הרצת צד שרת:**
-   ```bash
-   java -cp target/TaskManagementSystem-1.0-SNAPSHOT.jar com.taskmanager.ServerDriver
-   ```
-
-4. **הרצת צד לקוח:**
-   ```bash
-   java -cp target/TaskManagementSystem-1.0-SNAPSHOT.jar com.taskmanager.ClientMain
-   ```
 
 ## שימוש בסיסי
 
