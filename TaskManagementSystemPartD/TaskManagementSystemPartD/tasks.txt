@@ -1,8 +1,0 @@
-Morning Workout,30-minute cardio session,2024-10-01T07:00:00,2024-10-01T07:30:00,High,Not Started,the best
-Lunch with Client,Meet with client to discuss contract renewal,2024-10-03T12:30:00,2024-10-03T13:30:00,Medium,Not Started,the best
-Dentist Appointment,Cleaning and check-up,2024-10-05T14:00:00,2024-10-05T14:45:00,High,Not Started,the best
-Birthday Party,Attend John's birthday party,2024-10-07T18:00:00,2024-10-07T21:00:00,High,Not Started,the best
-Project Deadline,Submit final report for project,2024-10-10T17:00:00,2024-10-10T18:00:00,High,Not Started,the best
-Networking Event,Attend industry networking event,2024-10-12T19:00:00,2024-10-12T21:00:00,Medium,Not Started,the best
-Car Maintenance,Oil change and tire check-up,2024-10-14T10:00:00,2024-10-14T11:00:00,Medium,Not Started,the best
-Yoga Class,Evening relaxation yoga,2024-10-15T18:00:00,2024-10-15T19:00:00,Low,Not Started,the best
