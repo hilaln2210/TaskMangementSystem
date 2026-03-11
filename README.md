@@ -2,6 +2,12 @@
 
 A client/server task management application built with Java and JavaFX, developed as a 4-part academic project.
 
+## Screenshots
+
+| Main Task List | Add Task Dialog |
+|---|---|
+| ![Task List](screenshots/task_main.png) | ![Add Task](screenshots/task_add.png) |
+
 ## Description
 
 This system enables users to manage tasks through a graphical JavaFX interface connected to a backend server. The project is structured as four progressive parts (A–D), each adding new functionality on top of the previous one.
