@@ -1,5 +1,7 @@
 # Task Management System
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A client/server task management application built with Java and JavaFX, developed as a 4-part academic project.
 
 ## Screenshots
