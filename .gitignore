@@ -1,14 +1,4 @@
-# Build
-target/
 *.class
-*.jar
-*.war
-
-# IDE
+target/
 .idea/
-.vscode/
 *.iml
-
-# OS
-.DS_Store
-Thumbs.db

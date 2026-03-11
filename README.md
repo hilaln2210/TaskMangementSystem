@@ -1,42 +1,81 @@
-# Task Management System - Client/Server
+# Task Management System
 
-מגישים: סהר חלילי 313192031 והילה מנדלסון 206530693
+A client/server task management application built with Java and JavaFX, developed as a 4-part academic project.
 
-## תוכן עניינים
-1. [מבוא](#מבוא)
-2. [דרישות מערכת](#דרישות-מערכת)
-3. [ארכיטקטורה של המערכת](#ארכיטקטורה-של-המערכת)
-4. [רכיבי המערכת](#רכיבי-המערכת)
-5. [תכונות המערכת](#תכונות-המערכת)
-6. [שימוש בסיסי](#שימוש-בסיסי)
-7. [בדיקות](#בדיקות)
+## Description
 
-## מבוא
+This system enables users to manage tasks through a graphical JavaFX interface connected to a backend server. The project is structured as four progressive parts (A–D), each adding new functionality on top of the previous one.
 
-מערכת ניהול משימות מבוססת Client/Server — ממשק גרפי (JavaFX), שרת, מודול אלגוריתמים למיון וחיפוש.
+## Features
 
-### מטרות
-- ממשק גרפי פשוט לניהול משימות
-- שמירה, עריכה, מחיקה — תקשורת עם שרת
-- מיון, חיפוש, תזכורות אוטומטיות
+- **Task creation** — create tasks with title, description, start/end dates, priority, and status
+- **Task editing and deletion** — modify or remove existing tasks
+- **Calendar view** — view tasks on a CalendarFX calendar by due date
+- **Sorting algorithms** — sort tasks by date, priority, or status using a generic sorting module
+- **Search** — find tasks based on configurable criteria
+- **Reminders** — automatic reminders for upcoming task deadlines
+- **Client-server architecture** — client communicates with server via sockets using JSON (GSON)
 
-## דרישות מערכת
+## Tech Stack
+
 - **Java** 17+
-- **JavaFX** · **Maven** · **JUnit** · **CalendarFX** · **GSON**
+- **JavaFX** — graphical user interface
+- **Maven** — build and dependency management
+- **JUnit** — unit tests
+- **CalendarFX** — calendar view component
+- **GSON** — JSON serialization/deserialization
+- **Client-server sockets** — network communication between client and server
 
-## ארכיטקטורה
-- **Client** — ממשק JavaFX, TaskController, TaskModel
-- **Server** — TaskService, Database
-- **Algorithm Module** — SortingAlgorithm, SearchAlgorithm
+## Project Structure
 
-## הרצת בדיקות
-```bash
-mvn test
+Source code is contained in ZIP archives for each part:
+
+| Archive | Description |
+|---|---|
+| `TaskManagementSystemPartA.zip` | Part A — core data structures and algorithm module |
+| `TaskManagementSystemPartB.zip` | Part B — file persistence and sorting/search algorithms |
+| `TaskManagementSystemPartC.zip` | Part C — client-server architecture with socket communication |
+| `TaskManagementSystemPartD.zip` | Part D — JavaFX GUI, calendar view, and full integration |
+
+## How to Extract and Build
+
+1. Extract the desired part:
+   ```bash
+   unzip TaskManagementSystemPartX.zip -d PartX
+   cd PartX
+   ```
+
+2. Build with Maven:
+   ```bash
+   mvn clean install
+   ```
+
+3. Run tests:
+   ```bash
+   mvn test
+   ```
+
+4. For parts with a JavaFX client, ensure JavaFX is on the module path:
+   ```bash
+   mvn javafx:run
+   ```
+
+## Architecture
+
+```
+ +-------------------+       +-------------------+
+ |     Client        |       |     Server        |
+ +-------------------+       +-------------------+
+ |  TaskController   | <---->|   TaskService     |
+ |  TaskModel        |       |   SortingAlgorithm|
+ +-------------------+       +-------------------+
+        |                            |
+        V                            V
+ +-------------------+       +-------------------+
+ |    GUI (JavaFX)   |       |  Database (File)  |
+ +-------------------+       +-------------------+
 ```
 
-## מסקנות וייעול עתידי
-- אינטגרציה עם DB במקום קבצי טקסט
-- ממשק Web
-- שיפור ביצועים
+## Academic Context
 
-© Hila & Sahar · Java · JavaFX
+Submitted by **Hila Mendelson** and **Sahar Halili** as a collaborative academic project.
